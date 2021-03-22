@@ -2,22 +2,16 @@
 # Time Complexity: ?
 # Space Complexity: ?
 def max_sub_array(nums)
-    return 0 if nums == nil
+    return nil if nums.empty?
     
-    cur_max = next_max = 0
+    cur_max = 0 
+    best_max = nums[0] # account for one element arrays
 
-    nums.each do |i|
-        next_max += nums
-        if (next_max < 0)
-            next_max = 0
-        elsif (cur_max < next_max)
-            cur_mar = next_max
-        end
-    end
+    nums.each{|n| best_max = [best_max, cur_max = [n, cur_max + n].max].max}
+    # nums.each do |num|
+    #     cur_max = cur_max + num > num ? cur_max + num : num # from two element array case
+    #     best_max = best_max > cur_max ? best_max : cur_max
+    # end
 
-    return next_max
-end
-
-def max_sub_array_helper(nums)
-    
+    return best_max
 end
