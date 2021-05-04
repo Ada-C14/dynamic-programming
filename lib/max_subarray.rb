@@ -1,8 +1,16 @@
 
-# Time Complexity: ?
-# Space Complexity: ?
+# Time Complexity: O(n) - iterate through the whole array
+# Space Complexity: O(1) - constant variables
 def max_sub_array(nums)
-    return 0 if nums == nil
+    return nil if nums.empty?
     
-    raise NotImplementedError, "Method not implemented yet!"
+    current_streak = nums.first
+    global_max = nums.first
+
+    1.upto(nums.length - 1) do |i|
+        current_streak = [nums[i], current_streak + nums[i]].max
+        global_max = [global_max, current_streak].max
+    end
+
+    global_max
 end
