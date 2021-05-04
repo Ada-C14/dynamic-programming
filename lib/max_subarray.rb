@@ -23,17 +23,3 @@ def max_sub_array(nums)
 
     return max_so_far
 end
-
-# test output was hard to read
-# input = [-2,1,-3,4,-1,2,1,-5,4]
-# pp max_sub_array(input)
-# input = [-3, -4, -5, -6, -7]
-# pp max_sub_array(input)
-# input = [ -4, -5, -6, -7, -3]
-# pp max_sub_array(input)
-# input = [3]
-# pp max_sub_array(input)
-# input = []
-# pp max_sub_array(input)
-# input = [50, -50, 50]
-# pp max_sub_array(input)

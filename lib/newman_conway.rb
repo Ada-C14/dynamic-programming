@@ -14,7 +14,7 @@ def newman_conway(num)
   return "1 1" if num == 2
 
   memo = Array.new
-  memo[0] = 0 # will remove after, here to prevent type error
+  memo[0] = 0 # placeholder to prevent type error
   memo[1] = 1
   memo[2] = 1
 
