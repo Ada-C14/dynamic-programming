@@ -1,7 +1,7 @@
 
 
-# Time complexity: ?
-# Space Complexity: ?
+# Time complexity: 0(n)
+# Space Complexity: 0(n)
 def newman_conway(num)
   raise ArgumentError if num <= 0
   return "1" if num == 1
