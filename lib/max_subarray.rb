@@ -21,11 +21,10 @@ def max_sub_array(nums)
     max_ending_here = 0
 
     nums.each do |num|
-        max_ending_here = max_ending_here + num 
+        max_ending_here += num 
         if max_so_far < max_ending_here
             max_so_far = max_ending_here
-        elsif
-            max_ending_here < 0
+        elsif max_ending_here < 0
             max_ending_here = 0
         end
     end
