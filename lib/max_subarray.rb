@@ -10,7 +10,7 @@
 #   (c) if(max_so_far < max_ending_here)
 #             max_so_far = max_ending_here
 # return max_so_far
-
+# TODO https://leetcode.com/problems/maximum-subarray/ - below solution doesn't work on Leetcode, go back & review
 
 # Time Complexity: O(n) to iterate through the entire nums array 
 # Space Complexity: O(1) given that the space required for max_so_far and max_ending_here do not change with the size of nums
