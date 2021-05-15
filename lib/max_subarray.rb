@@ -1,6 +1,6 @@
 
-# Time Complexity: ?
-# Space Complexity: ?
+# Time Complexity: O(n!)? You only go throught the each with index n times, but the inner loop completes decrementing number of loops... 
+# Space Complexity: O(1), no additional data structures created outside of 2 variables each times
 def max_sub_array(nums)
     return 0 if nums == nil
     return nil if nums == []
