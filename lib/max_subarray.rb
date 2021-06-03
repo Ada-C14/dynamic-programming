@@ -1,8 +1,18 @@
 
-# Time Complexity: ?
-# Space Complexity: ?
+# Time Complexity: O(n)
+# Space Complexity: O(n)
 def max_sub_array(nums)
-    return 0 if nums == nil
-    
-    raise NotImplementedError, "Method not implemented yet!"
+    local_max = nums[0]
+    max = local_max
+  
+    1.upto(nums.length - 1) do |i|
+      if local_max > 0
+        local_max += nums[i]
+      else
+        local_max = nums[i]
+      end
+        max = local_max if local_max > max
+    end
+  
+    return max
 end
