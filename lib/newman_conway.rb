@@ -17,9 +17,4 @@ def newman_conway(num)
   string = result[1..-1].join(" ")
 
   return string
-end
-
-# num = 5
-# i: 3
-# result[i]: 3
-# result: 0, 1, 1, 
+end 
