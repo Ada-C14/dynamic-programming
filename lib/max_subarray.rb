@@ -1,6 +1,6 @@
 
-# Time Complexity: ?
-# Space Complexity: ?
+# Time Complexity: O(n)
+# Space Complexity: O(n)
 def max_sub_array(nums)
     return nil if nums.empty?
 #     Initialize:
