@@ -1,6 +1,6 @@
 
-# Time Complexity: ?
-# Space Complexity: ?
+# Time Complexity: O(nlogn)
+# Space Complexity: O(n)
 def max_sub_array(nums)
     local_max = 0
     max = nil
